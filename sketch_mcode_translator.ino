@@ -3,7 +3,7 @@ int LED = 13;
 int Buzzer = 9;
 int STime = 300;
 int LTime = 900;
-String mcode = "Paris";
+String mcode = "sos";
 byte Lmcode = 0;
 char j;
 int timing = 600;
@@ -20,7 +20,7 @@ void myswitch (int timing) {
   delay(timing);
   digitalWrite(LED, LOW);
   digitalWrite(Buzzer, LOW);
-  delay(timing);
+  delay(timing*2);
 }
 //////////////////   Morse Code dot and dash functions
 void dot(){
@@ -271,3 +271,4 @@ delay(LTime);
 //mcode= " ";
 //}
 }
+
