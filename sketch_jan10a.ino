@@ -1,15 +1,4 @@
-/*
- * One Button two button red button blue button
- * 
- * learnelectronics
- * 23 Sept 2017
- * 
- * www.youtube.com/c/learnelectronics
- * arduino0169@gmail.com
- * 
- * Find the library here: http://www.mathertel.de/Arduino/OneButtonLibrary.aspx
- */
- #include "OneButton.h"                              //we need the OneButton library
+#include "OneButton.h"                              //we need the OneButton library
  
 int led = 8;
 int buzzer = 9; 
@@ -38,11 +27,11 @@ void loop() {
  
  
 void doubleclick() {                                  
- digitalWrite(led,HIGH);                             // light the   LED
+ digitalWrite(led,HIGH);                             // light the LED
  digitalWrite(buzzer,HIGH);
  delay(1000);                                       // wait one second
  digitalWrite(led,LOW);
- digitalWrite(buzzer, LOW);                             // turn off g  LED
+ digitalWrite(buzzer, LOW);                             // turn off LED
 } 
  
 void singleclick(){                                 //when the button is clicked
@@ -50,7 +39,7 @@ void singleclick(){                                 //when the button is clicked
  digitalWrite(buzzer,HIGH);
  delay(1000);                                       // wait one second
  digitalWrite(led,LOW);
- digitalWrite(buzzer, LOW);                              // turn off the  led
+ digitalWrite(buzzer, LOW);                              // turn off the led
 }
  
 void longclick(){                                   // when buton is long-pressed
