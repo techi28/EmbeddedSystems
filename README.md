@@ -1,3 +1,3 @@
 # EmbeddedSystems
 
-Small projects file regarding Ardino board and C.
+Small tutorial file regarding Ardino board and C.
